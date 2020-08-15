@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: firebrick;
+}
+
+.welcome_text{
+    width: 400px;
+}
+.welcome_form input,
+.welcome_form button{
+    display: block;
+    width: 100%;
+}
+.welcome_form input{
+    margin-bottom: 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+.welcome_form button{
+    font-size: 22px;
+    padding: 20px 0px;
+    border: none;
+    background-color: magenta;
+    border-radius: 100px;
+    color: whitesmoke;
+    transition: 0.4 all;
+}
+.welcome_form button:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+.welcome_form input:focus,
+.welcome_form button:focus{
+    outline: none;
+}
+ button{
+    background-color: rgba(0,0,0,0.1);
+    background: linear-gradient(-45deg, deeppink,brown, lightgray,orange, green,navy, deeppink); 
+    background-size: 700% 700%;
+    animation: gradient 7s ease infinite;
+    background-attachment: fixed;
+    padding-bottom: 90px; 
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}  
+.quiz{
+    border-radius: 3px;
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 60px auto;
+}
+.quiz_header{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
+z-index: 1;
+}
+
+.quiz_body{
+    background-color: gainsboro;
+    padding: 30px;
+}
+.quiz_user{
+    display: flex;
+    align-self: center;
+    padding-left: 30px;
+}
+
+.option_group{
+    list-style-type: none;
+    margin: 30px 0px;
+}
+.option{
+    background-color: white;
+    width: 300px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 100px;
+    border: 2px solid transparent;
+}
+.option:hover{
+  cursor: pointer;  
+  border: 2px solid goldenrod;
+}
+.btn-next{
+   display: block;
+   width: 30%;
+   font-size: 22px;
+    padding: 20px 0px;
+    border: none;
+    background-color: white;
+    border-radius: 100px;
+    color: white;
+    transition: 0.4 all;
+}
+.btn-next:hover{
+    cursor: pointer;
+}
+.btn-next:focus{
+    outline: none;
+}
+.active{
+    background-color: lightsalmon;
+    color: white;
+}
+.fa-trophy{
+    font-size: 300px !important;
+    color: white;
+}
+.user_name,
+.user_point{
+    color: white;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.row{
+    display:  inline-flex !important;
+}
+.center{
+    text-align: center;
+}
